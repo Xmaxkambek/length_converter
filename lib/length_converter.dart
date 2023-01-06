@@ -24,6 +24,17 @@ class Length {
       }
     }
 
+    if (this.unit == 'km') {
+      if (unit == 'm') {
+        return this.x * 1000;
+      }
+      if (unit == 'cm') {
+        return this.x * 100000;
+      }
+      return this.x;
+    }
+
     return 0;
   }
 }
+ 
